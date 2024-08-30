@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Mukta:wght@300;400&display=swap');
 
 .font-mukta {
   font-family: 'Mukta', sans-serif;
@@ -41,6 +41,7 @@
 .nepali-minute::after {
   content: ':';
   position: absolute;
+  top: 0;
   right: -20px;
 }
 
