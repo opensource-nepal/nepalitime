@@ -41,6 +41,7 @@
 .nepali-minute::after {
   content: ':';
   position: absolute;
+  top: 0;
   right: -20px;
 }
 
