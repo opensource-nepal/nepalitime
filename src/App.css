@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+.font-mukta {
+  font-family: 'Mukta', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-right {
+  text-align: right;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,38 +19,58 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.english-date {
+  font-size: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nepali-date {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nepali-time {
+  font-size: 50px;
+  display: flex;
 }
 
-.card {
-  padding: 2em;
+.nepali-hour,
+.nepali-minute {
+  margin-right: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.nepali-hour::after,
+.nepali-minute::after {
+  content: ':';
+  position: absolute;
+  right: -20px;
+}
+
+.nepali-time .nepali-time-sub {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  letter-spacing: 10px;
+}
+
+.nepali-am-pm {
+  margin-left: 5px;
+}
+
+.org-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 10px;
+  color: #666;
+  font-weight: 300;
+}
+
+.org-name a {
+  color: #666;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.org-name a:hover {
+  color: #666;
 }
